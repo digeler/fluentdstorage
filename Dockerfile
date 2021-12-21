@@ -20,6 +20,11 @@ RUN echo "<source>\n\
     @type none\n\
   </parse>\n\
 </source>\n\
+<filter cont>\n\
+  @type grep \n\
+  key message \n\
+  pattern "FromGraphUser"  \n\
+  </filter> \n\
 <match cont>\n\
   @type azure-storage-append-blob\n\
   azure_storage_account             \"#{ENV['STORAGE_ACCOUNT']}\"\n\

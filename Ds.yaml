@@ -18,12 +18,12 @@ spec:
       # remove it if your masters can't run pods     
       containers:
       - name: fluentblob
-        image: dinorg/fluentblob 
+        image: dinorg/fluentdfilter
         env:
         - name: STORAGE_ACCOUNT
           value: dinttteee
         - name: STORAGE_ACCESS_KEY
-          value: *************************************
+          value: **********
         resources:
           limits:
             memory: 200Mi
